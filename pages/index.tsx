@@ -1,8 +1,9 @@
+import { NextPage } from 'next';
 import { useState } from 'react';
 
-import PassengerCounterInput from './components/Counter';
+import PassengerCounterInput from '../components/PassengerCounterInput';
 
-const App = () => {
+const Home: NextPage = () => {
   const [adultCount, setAdultCount] = useState(0);
 
   return (
@@ -20,4 +21,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
